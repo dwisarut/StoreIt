@@ -27,6 +27,11 @@ const itemSchema = mongoose.Schema(
       required: [true, "Please enter the item cost per unit"],
       min: 0,
     },
+    costUnit: {
+      type: String,
+      require: true,
+      default: "THB",
+    },
   },
   {
     timestamps: true,
