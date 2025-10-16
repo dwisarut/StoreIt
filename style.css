@@ -1,3 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Gabarito:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
-    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 75px;
+    background-color: #2D35A2;
+}
+
+#header-logo {
+    width: 189px;
+    height: 53px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #ECFAFF;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ECFAFF;
+}
+
+.main-content-split {
+    display: flex;
+    align-items: flex-start;
+    padding: 75px 0 75px 75px; 
+    width: 100%; 
+}
+
+.hero-intro {
+    flex: 0 0 50%;
+    padding-right: 0;
+}
+
+.hero-intro h1 {
+    font-size: 66px;
+    color: #2D35A2;
+}
+
+.hero-intro p {
+    margin: 40px 0px;
+    font-size: 24px;
+    color: #4A4A4A;
+}
+
+button {margin-top: 20px;
+    background-color: #2D35A2;
+    color: #ECFAFF;
+    width: 280px;
+    height: 50px;
+    border: none;
+    border-radius: 5em;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #565ba5;
+}
+
+aside {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 50%;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    padding: 0;
+}
+
+main section:nth-child(2) {
+    padding: 50px 75px 50px 75px;
+}
+
+main section:nth-child(2) h2 {
+    text-align: left;
+    padding-bottom: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2D35A2;
+}
+
+.techstack-logo-upper,
+.techstack-logo-lower {
+    /* FIX: Apply Flexbox to align logos in rows */
+    display: flex; 
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
+}
+
+.techstack-logo-upper {
+    padding-bottom: 30px;
+}
+
+.techstack-logo-lower {
+    padding-top: 80px;
+    padding-bottom: 75px; /* Add space above footer */
+}
+
+.techstack-logo-upper img,
+.techstack-logo-lower img {
+    width: 200px; /* Example sizing for uniformity */
+    height: auto;
+}
+
+footer {
+    height: 100px;
+    background-color: #2D35A2;
+}
+
+#copyright  {
+    display: flex;
+    justify-content: left;
+    margin-top: 45px;
+    margin-left: 40px;
+    color: #ECFAFF;
 }
