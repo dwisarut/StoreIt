@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Gabarito:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 75px;
+    background-color: #4A4A4A;
+    gap: 20px;
+}
+
+#header-logo {
+    width: 189px;
+    height: 53px;
+    display: block;
+}
+
+.action-bar {
+    display: flex;
+    flex-grow: 1; 
+    align-items: center;
+    gap: 30px;
+}
+
+.namebar {
+    width: 150px;
+    margin-right: auto;
+}
+
+.create-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.action-bar input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 2em;
+    font-size: 16px;
+    height: 40px; 
+}
+
+.namebar,
+.searchbar {
+    outline: none;
+    border: none;
+}
+
+.searchbar {
+    width: 400px;
+}
+
+.action-bar button {
+    color: #ECFAFF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 2em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    transition: background-color 0.1s;
+}
+
+.add-btn {
+    background-color: #2f9253;
+}
+
+.delete-btn {
+    background-color: #B03A2E; 
+}
+
+.add-btn:hover {
+    background-color: #38b365;
+}
+
+.delete-btn:hover {
+    background-color: #C04A3E;
+}
+
+main {
+    padding: 40px 75px;
+}
+
+table {
+    width: 100%;
+    /* border-collapse: collapse;  */
+    background-color: white;
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+table thead {
+    background-color: #4A4A4A; 
+    color: #ECFAFF; 
+}
+
+table th {
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-sizing: border-box; 
+}
+
+table td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee; 
+    font-size: 16px;
+    color: #333;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f8f8f8; 
+}
+
+table tbody tr:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+footer {
+    height: 60px;
+    background-color: #4A4A4A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

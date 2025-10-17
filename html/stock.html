@@ -11,18 +11,54 @@
     <body>
 
         <header>
-            <a href="/"><img id="header-logo" src="../images/Dark-theme-logo.png" alt="Store-It logo"></a>
-            <nav>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </nav>
+            <a href="../html/index.html"><img id="header-logo" src="../images/Dark-theme-logo.png" alt="Store-It logo"></a>
+
+            <div class="action-bar">
+                <input type="text" class="namebar" placeholder="Stock name...">
+
+                <form class="create-form">
+                    <button type="button" class="add-btn">Add</button>
+                    <button type="button" class="delete-btn">Delete</button>
+                </form>
+
+                <form class="search-form">
+                    <input type="text" class="searchbar" placeholder="Search...">
+                </form>
+            </div>
+            
         </header>
 
         <main>
-            
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Part ID</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Unit</th>
+                        <th>Cost per Unit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>BOK-LN-1</td>
+                        <td>Silent Witch vol.1</td>
+                        <td>2</td>
+                        <td>Unit</td>
+                        <td>315</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>BOK-LN-2</td>
+                        <td>Eight Six vol.1</td>
+                        <td>12</td>
+                        <td>Unit</td>
+                        <td>315</td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
         
         <footer>
