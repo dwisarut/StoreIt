@@ -9,60 +9,63 @@
     </head>
 
     <body>
+        <div id="app">
+            <header>
+                <a href="../html/"><img id="header-logo" src="../images/Dark-theme-logo.png" alt="Store-It logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="../html/stock.html">Stock</a></li>
+                        <!--<li><a href="#">Reorder</a></li>
+                        <li><a href="#">Assets</a></li>-->
+                    </ul>
+                </nav>
+            </header>
 
-        <header>
-            <a href="../html/"><img id="header-logo" src="../images/Dark-theme-logo.png" alt="Store-It logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="../html/stock.html">Stock</a></li>
-                    <li><a href="#">Reorder</a></li>
-                    <li><a href="#">Assets</a></li>
-                </ul>
-            </nav>
-        </header>
+            <main>
+                <div class="main-content-split">
+                    <section class="hero-intro">
+                        <h1>
+                            Simplified ERP system<br>
+                            for common uses
+                        </h1>
+                        <p>
+                            This is an attempt to make ERP system in a very simple<br>
+                            CRUD app with some specific functionality for addressing<br>
+                            real world issues.
+                        </p>
+                        <form>
+                            <button formaction="../html/stock.html">Start now</button>
+                        </form>
+                    </section>
 
-        <main>
-            <div class="main-content-split">
-                <section class="hero-intro">
-                    <h1>
-                        Simplified ERP system<br>
-                        for common uses
-                    </h1>
-                    <p>
-                        This is an attempt to make ERP system in a very simple<br>
-                        CRUD app with some specific functionality for addressing<br>
-                        real world issues.
-                    </p>
-                    <button>Start now</button>
+                    <aside>
+                        <img src="../images/preview.png" alt="Image previewing products">
+                    </aside>
+                </div>
+                
+                <section>
+
+                    <h2>Here are the tech stack of this project</h2>
+
+                    <div class="techstack-logo-upper">
+                        <img src="../images/HTML5.png" alt="HTML logo">
+                        <img src="../images/CSS3-1.png" alt="CSS logo">
+                        <img src="../images/JavaScript.png" alt="Javascript logo">
+                        <img src="../images/Nodejs.png" alt="Node.js logo">
+                    </div>
+
+                    <div class="techstack-logo-lower">
+                        <img src="../images/expressjs.png" alt="Express.js logo">
+                        <img src="../images/mongoDB.png" alt="mongoDB logo">
+                    </div>
+
                 </section>
-
-                <aside>
-                    <img src="../images/preview.png" alt="Image previewing products">
-                </aside>
-            </div>
+            </main>
             
-            <section>
-
-                <h2>Here are the tech stack of this project</h2>
-
-                <div class="techstack-logo-upper">
-                    <img src="../images/HTML5.png" alt="HTML logo">
-                    <img src="../images/CSS3-1.png" alt="CSS logo">
-                    <img src="../images/JavaScript.png" alt="Javascript logo">
-                    <img src="../images/Nodejs.png" alt="Node.js logo">
-                </div>
-
-                <div class="techstack-logo-lower">
-                    <img src="../images/expressjs.png" alt="Express.js logo">
-                    <img src="../images/mongoDB.png" alt="mongoDB logo">
-                </div>
-
-            </section>
-        </main>
-        
-        <footer>
-            <p id="copyright">2025 Store-It</p>
-        </footer>
+            <footer>
+                <p id="copyright">2025 Store-It</p>
+            </footer>
+        </div>
 
         <script src="../js-fe/scripts.js" type="module"></script>
     </body>
