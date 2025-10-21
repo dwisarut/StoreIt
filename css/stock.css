@@ -131,6 +131,12 @@ table tbody tr:hover {
     cursor: pointer;
 }
 
+.table-row--selected {
+    background-color: #ffe082 !important; /* Yellow highlight */
+    font-weight: bold;
+    border-left: 5px solid #ffc107;
+}
+
 .modal {
     display: none;
     position: fixed; 
