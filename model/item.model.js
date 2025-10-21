@@ -29,7 +29,7 @@ const itemSchema = mongoose.Schema(
     },
     costUnit: {
       type: String,
-      require: true,
+      required: true,
       default: "THB",
     },
   },
