@@ -18,6 +18,8 @@ export default class StockView {
         this.btnSave = document.getElementById('modal-save-btn');
         this.btnCancel = document.getElementById('modal-cancel-btn');
 
+        this.hideModal();
+
         this.addBtn.addEventListener('click', () => {
             this.showModal('add');
         })
@@ -41,6 +43,10 @@ export default class StockView {
             }
         })
 
+        this.btnCancel.addEventListener('click', () => {
+            this.hideModal();
+        })
+
         window.addEventListener('click', (e) => {
             if (e.target === this.modal) {
                 this.hideModal();
@@ -48,7 +54,7 @@ export default class StockView {
         })
     }
 
-    _createRowHTML(item) {
+    _createRowHTML(item, rowNum) {
         const id = item._id;
         //const totalCost = (item.quantity * item.costPerUnit).toFixed(2); <- TO BE DECIDE
 
@@ -65,7 +71,7 @@ export default class StockView {
         `
     }
 
-    updateStockList(items) {
+    updateItemsList(items) {
         this.tableBody.innerHTML = "";
 
         if (items.length === 0) {
@@ -103,7 +109,7 @@ export default class StockView {
     setActiveRow(id) {
         this.activeItemId = id;
 
-        this.tableBody.querySelectorAll('table-row--select').forEach(row => {
+        this.tableBody.querySelectorAll('.table-row--selected').forEach(row => {
             row.classList.remove("table-row--selected");
         });
 
@@ -115,7 +121,7 @@ export default class StockView {
 
     updateActiveItem(item) {
         this.setActiveRow(item._id);
-        this.showModal('edit', item);
+        //this.showModal('edit', item);
     }
 
     showModal(mode, item = {}) {
@@ -146,6 +152,10 @@ export default class StockView {
         const data = {};
 
         for (const [key, value] of formData.entries()) {
+
+            if (key === '_id' && value.trim() === '') {
+                continue;
+            }
 
             if (['quantity', 'costPerUnit'].includes(key)) {
                 data[key] = parseFloat(value) || 0;
