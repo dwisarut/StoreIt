@@ -1,8 +1,8 @@
 export default class StockView {
-    constructor(root, { onItemSelect, onItemAdd, onItemDelete }) {
+    constructor(root, { onItemSelect, onItemSave, onItemDelete }) {
         this.root = root;
         this.onItemSelect = onItemSelect;
-        this.onItemAdd = onItemAdd;
+        this.onItemSave = onItemSave;
         this.onItemDelete = onItemDelete;
 
         this.activeItemId = null;
@@ -26,7 +26,7 @@ export default class StockView {
             e.preventDefault();
 
             const itemData = this.getFormInputData();
-            this.onItemAdd(itemData);
+            this.onItemSave(itemData);
             this.hideModal();
         })
 
