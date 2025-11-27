@@ -19,4 +19,4 @@ My objective for this project is to learn about how full-stack websites (or web 
 * The MERN stack (without R) that I used today has lots of abstraction; I should further explore how things work underneath in the future.
 * Now I know pure Javascript is lots of pain; maybe in the future I should check Svelte out.
 * Definitely will explore React.js
-* Didn't implement search function yet, will return to do it
+* Didn't implement search function yet
